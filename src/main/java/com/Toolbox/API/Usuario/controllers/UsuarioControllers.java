@@ -13,6 +13,7 @@ public class UsuarioControllers {
 @Autowired
 private UsuarioDao usuarioDao;
 
+    @CrossOrigin(origins="https://gestion-de-usuarios.000webhostapp.com/")
     @RequestMapping(value = "api/obtenerUsuario/{cedula}", method = RequestMethod.GET)
     public Usuario obtenerUsuariosPorMail(@PathVariable String cedula) {
 

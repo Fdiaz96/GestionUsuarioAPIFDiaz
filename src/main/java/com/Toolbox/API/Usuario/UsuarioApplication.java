@@ -20,7 +20,7 @@ public class UsuarioApplication {
 	public CorsFilter corsFilter() {
 		CorsConfiguration corsConfiguration = new CorsConfiguration();
 		corsConfiguration.setAllowCredentials(true);
-		corsConfiguration.setAllowedOrigins(Arrays.asList("https://gestion-de-usuarios.000webhostapp.com"));
+		corsConfiguration.setAllowedOrigins(Arrays.asList("https://gestion-de-usuarios.000webhostapp.com", "http://localhost:8080/"));
 		corsConfiguration.setAllowedHeaders(Arrays.asList("Origin", "Access-Control-Allow-Origin", "Content-Type",
 				"Accept", "Authorization", "Origin, Accept", "X-Requested-With",
 				"Access-Control-Request-Method", "Access-Control-Request-Headers"));

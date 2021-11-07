@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="StylesCSS3.css">
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper teal darken-2">
+        <a href="Index.html" class="brand-logo">Gestion de usuarios</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="Index.html">Usuarios registrados</a></li>
+            <li><a href="Busqueda-usuario.html">Buscar usuario</a></li>
+            <li><a href="Registro.html">Ingresar Usuario</a></li>
+
+        </ul>
+    </div>
+</nav>
+<br>
+<div>
+    <p>
+        En esta sección se podrá buscar un usuario por cédula de identidad.
+    </p>
+</div>
+<div class="ingresoDatos">
+    <div class="row">
+        <div class="input-field col s6">
+            <input placeholder="Ingrese su cédula sin puntos ni guiones" id="cedula" type="text" class="ingresotexto">
+            <label for="cedula">Cédula</label>
+            <button id="btnBuscar" class="waves-effect waves-light btn" href="#">Buscar</button>
+        </div>
+
+    </div>
+    <br>
+
+    <div class="tablaBusquedaUsuario divTablas">
+        <table class="striped tablas"id="tablaUsuarios" >
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Cédula</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th>Celular</th>
+            </tr>
+            </thead>
+
+            <tbody>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+    <script src="scriptBusqueda.js"></script>
+
+</body>
+</html>

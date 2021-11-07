@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="StylesCSS3.css">
+    <Script src="script.js"></Script>
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper teal darken-2">
+        <a href="Index.html" class="brand-logo">Gestion de usuarios</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="Index.html">Usuarios registrados</a></li>
+            <li><a href="Busqueda-usuario.html">Buscar usuario</a></li>
+            <li><a href="Registro.html">Ingresar Usuario</a></li>
+
+
+        </ul>
+    </div>
+</nav>
+<br>
+<br>
+<div>
+    <p>
+        En esta sección se podrá registrar un usuario nuevo.
+    </p>
+</div>
+<div class="ingresoDatos">
+
+    <div class="row">
+
+        <form class="col s8">
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Ingrese su cédula sin puntos ni guiones" id="txtCedula" type="text" class="ingresotexto">
+                    <label for="txtCedula">Cédula</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="txtNombre" type="text" class="ingresotexto">
+                    <label for="txtNombre">Nombre</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="txtApellido" type="text" class="ingresotexto">
+                    <label for="txtApellido">Apellido</label>
+                </div>
+
+
+                <div class="input-field col s12">
+                    <input id="txtEmail" type="email" class="validate ingresotexto">
+                    <label for="txtEmail">Email</label>
+                </div>
+
+                <div class="input-field col s12">
+                    <input id="txtCelular" type="text" class="ingresotexto">
+                    <label for="txtCelular">Celular</label>
+
+
+
+                </div>
+                <a href="#"id="btnSubmit" class="btn waves-effect waves-light" type="submit" >Registrar
+                    <i class="material-icons right">send</i>
+                </a>
+            </div>
+</form>
+    </div>
+</div>
+</body>
+</html>

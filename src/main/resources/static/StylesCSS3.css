@@ -1,0 +1,128 @@
+body{
+    background: rgb(216,122,147);
+	background:  #004d40;
+	font-family: Arial, Helvetica, sans-serif;
+	width: fit-content;
+    
+}
+.navBarraSuperior{
+    position:fixed;
+}
+
+.descripcion{
+margin: 2em;
+border: #000000;
+border-radius: 50px;
+
+}
+
+ /* label color */
+ .input-field label {
+	color: rgb(255, 255, 255);
+  }
+  nav .brand-logo {
+	position: absolute;
+	color: #fff;
+	display: inline-block;
+	font-size: 2.1rem;
+	padding-left: 13px;
+}
+
+.tablas{
+	width: 500px;
+		border-style: solid;
+		border-width: 1px;
+	margin-top:50px;
+
+}
+
+.tablaBusquedaUsuario{
+	margin-left: 11px;
+	
+}
+.btnEliminar{
+	color:red;
+}
+#tablaIndex{
+	margin:auto;
+	margin-top:50px;
+}
+
+p{
+    margin-top:50px;
+	width: 53%;
+	border-radius: 100px;
+    margin-left: 25%;
+	padding: 49px;
+	color: white;
+	font-size: xx-large;
+	background: rgb(0, 121, 107 );
+}
+.ingresoDatos{
+	margin-left: 25%;
+	margin-top: 50px;
+	color:white;
+}
+.divTablas{
+	color: white;
+	font-size: medium;
+}
+.ingresotexto{
+	color:white;
+}
+.sidenav li>a{
+	color:white;
+}
+.material-icons{
+	position:absolute ;
+}
+@media (max-width: 993px) {
+
+	p{ 	
+	width: 100% ;
+    border-radius: 100px ;
+    margin: auto ;
+    padding: 49px ;
+    color: white ;
+    font-size: x-large ;
+    background: rgb(32 26 62 / 80%) ;
+	}
+	nav .brand-logo{
+		position: inherit;
+	}
+}
+
+only screen and (max-width: 760px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
